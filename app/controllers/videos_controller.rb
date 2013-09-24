@@ -1,7 +1,10 @@
 class VideosController < ApplicationController
   def show_gladiator
-    @title = "Gladiator 'Are You Not Entertained' Scene"
-    @description = "Russel Crowe is a boss in this video"
+    @video = {
+      :title => "Gladiatator",
+      :description => "This is a movie where Russell Crowe is fightin' round the world",
+      :youtube_id => "FI1ylg4GKv8"
+    }
   end
 
   def show_air_force_one
